@@ -106,7 +106,7 @@ def prediction(model: Model, file: UploadFile = File(...)):
     # Return the image as a stream specifying media type
     return StreamingResponse(file_image, media_type="image/jpeg")
  # Allows the server to be run in this interactive environment
-nest_asyncio.apply()
+# nest_asyncio.apply()
 
 # Host depends on the setup you selected (docker or virtual env)
 # host = "0.0.0.0" if os.getenv("DOCKER-SETUP") else "https://objectdetections.herokuapp.com/"

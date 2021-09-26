@@ -110,7 +110,7 @@ def prediction(model: Model, file: UploadFile = File(...)):
 
 # Host depends on the setup you selected (docker or virtual env)
 # host = "0.0.0.0" if os.getenv("DOCKER-SETUP") else "https://objectdetections.herokuapp.com/"
-# host = "0.0.0.0"
+host = "0.0.0.0"
 
 # Spin up the server!    
-# uvicorn.run(app, host=host, port=8000)
+uvicorn.run(app, host=host, port=8000)
